@@ -45,8 +45,6 @@ export class MessagingService {
     const notify: Notification = new Notification(title, {body, icon});
     notify.onclick = event => {
       event.preventDefault();
-      console.log(window);
-      // window.location.href = 'https://stackoverflow.com/questions/63203360/open-deep-link-url-when-click-on-fcm-notification';
       window.open('https://stackoverflow.com/questions/63203360/open-deep-link-url-when-click-on-fcm-notification');
     };
   }
